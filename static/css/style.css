@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+#container {
+    display: flex;
+    /* align-items: center; */
+}
+#camera {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px;
+}
+.output_canvas{
+    width: 640px;
+    height: 480px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#toggleButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#toggleButton.off {
+    background-color: #09ff00;
+}
+.disabled {
+    opacity: 0.5; /* Visually indicates disabled state */
+    pointer-events: none; /* Prevents interaction */
+  }
